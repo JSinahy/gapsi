@@ -20,14 +20,17 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
+// View Model
 class MainActivityViewModel : ViewModel() {
     var myitems : MutableLiveData<GeneralResponse<ArrayList<PhotosEcommerceModel>>>
     var myPhotosAdapter : PhotosAdapter
     var searchText = MutableLiveData<String>()
 
+    public fun testFunction(){
+        System.out.println("Esto esta perro");
+    }
 
-
+    // Se inicializan os mutable
     init{
         myitems = MutableLiveData()
         myPhotosAdapter = PhotosAdapter()
@@ -37,6 +40,7 @@ class MainActivityViewModel : ViewModel() {
         return myPhotosAdapter
     }
 
+    // Se setea el daptar aunque debe de ir en la vista.
     fun SetAdapter(data: ArrayList<PhotosEcommerceModel>){
         myPhotosAdapter.setDataList(data)
         myPhotosAdapter.notifyDataSetChanged()
