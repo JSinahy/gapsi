@@ -3,6 +3,7 @@ package com.laraguzman.ecommercegapsi.data.persistance
 import android.content.Context
 import android.content.SharedPreferences
 
+
 class Preferences(context: Context) {
     var PREFS_NAME = "com.laraguzman.ecommercegapsi.sharedpreferences"
     val SHARED_NAME = "history_array"
