@@ -66,7 +66,9 @@ class MainActivityViewModel : ViewModel() {
 
         })
     }
-
+    /**
+     * Aquiza aqui podamos hacer algo mas para saber que hay cambios
+     */
 
 
 
