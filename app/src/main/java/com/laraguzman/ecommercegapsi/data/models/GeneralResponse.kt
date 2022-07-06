@@ -7,3 +7,7 @@ class GeneralResponse<T> (
         var items: T
 )
 
+/**
+ * Y modificaciones en mi rama.
+ */
+
