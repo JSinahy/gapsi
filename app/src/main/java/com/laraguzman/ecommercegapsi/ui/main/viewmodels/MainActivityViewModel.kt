@@ -82,5 +82,8 @@ class MainActivityViewModel : ViewModel() {
      */
 
 
-
+    /**
+     * Y entonces ya haciendo el rebase hago mis cambios
+     *
+     */
 }
