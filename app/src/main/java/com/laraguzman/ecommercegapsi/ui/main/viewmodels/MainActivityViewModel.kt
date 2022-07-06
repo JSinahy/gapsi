@@ -46,9 +46,12 @@ class MainActivityViewModel : ViewModel() {
         myPhotosAdapter.notifyDataSetChanged()
     }
 
+    // Estos son los nuevos cambios
     fun GetListPhotosEcommerce() : MutableLiveData<GeneralResponse<ArrayList<PhotosEcommerceModel>>>{
         return myitems
     }
+
+    // En teoria primro debo de hacer pull
     fun GetMyItemsFromAPI(search: String){
 
         val retrofitInstance = EcommerceApiInstance().GetInstance().create(EcommerceServices::class.java)
@@ -72,6 +75,10 @@ class MainActivityViewModel : ViewModel() {
     }
     /**
      * Aquiza aqui podamos hacer algo mas para saber que hay cambios
+     */
+
+    /**
+     * Y posterior a ello debo de hacer el rebase para reorganizar mi branch
      */
 
 
